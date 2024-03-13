@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="Vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÍNH CHỈ SỐ BMI </title>
+    <link rel="stylesheet" href="Bai4.css">
+</head>
+<body>
+
+    <div class="container">
+        <label id="title">  <h1>TÍNH CHỈ SỐ BMI</h1> </label>
+        <label for="weight">Nhập cân nặng?</label>
+        <input type="number" id="weight" placeholder="Nhập cân nặng?">
+
+        <label for="height">Nhập chiều cao?</label>
+        <input type="number" id="height" placeholder="Nhập chiều cao?">
+
+        <label for="Chọn loại tuổi">Chọn loại tuổi?</label>
+         <select id="age" name="age">
+        <option value="trungNien">Trung niên</option>
+        <option value="trungNienLonTuoi">Trung niên, Già lớn tuổi </option>
+        <option value="giaLonTuoi">Già, Lớn tuổi</option>
+        <!-- Thêm option mới cho lựa chọn độ tuổi -->
+    </select>
+        <button id="myButton" onclick="calculateBMI()">Tính BMI</button>
+
+        <div id="result">
+            <label id="content-result"></label>
+        </div>
+    </div>
+    <script src="Bai4.js"></script>
+</body>
+</html>
+<!------
